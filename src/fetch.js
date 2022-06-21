@@ -1,6 +1,7 @@
 async function getMonkey() {
     let url = 'https://statsnite.com/api/btd/v3/tower/dart-monkey'
     let ops = {
+        method: 'GET',   // should be default anyway
         mode: 'no-cors'
     }
 
@@ -16,7 +17,7 @@ async function renderMonkey() {
     let monkey = await getMonkey()
     let html = ''
 
-    
+    console.log(monkey)
 
     let htmlSegment = 
         `<div class="monkey">
