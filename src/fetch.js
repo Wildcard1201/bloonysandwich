@@ -1,13 +1,15 @@
 async function getMonkey() {
     let url = 'https://statsnite.com/api/btd/v3/tower/dart-monkey'
-    let ops = {
-        method: 'GET',   // should be default anyway
-        mode: 'no-cors'
-    }
+    // let ops = {
+    //     method: 'GET',   // should be default anyway
+    //     mode: 'no-cors'
+    // }
 
     try {
-        let res = await fetch(url, ops)
+        let res = await fetch(url)
+        console.log('fetch success')
         return await res.json()
+        
     } catch (error) {
         console.log(error)
     }

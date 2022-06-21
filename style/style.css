@@ -7,3 +7,9 @@
 h1 {
     color: blue;
 }
+
+.container {
+    border: 1px solid blue;
+    min-width: 400px;
+    min-height: 300px;
+}
